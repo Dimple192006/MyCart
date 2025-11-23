@@ -2,7 +2,7 @@ import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Registration from "./pages/Registration";
 import Home from "./pages/Home";
-import Login from "./pages/login";
+import Login from "./pages/Login.jsx";
 import Nav from "./component/Nav";
 import { useContext } from "react";
 import About from "./pages/About";

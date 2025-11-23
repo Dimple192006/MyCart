@@ -7,11 +7,11 @@ import { IoEyeOutline } from "react-icons/io5";
 import { IoEye } from "react-icons/io5";
 import axios from "axios"
 
-import { authDataContext } from "../context/authContext";
+import { authDataContext } from "../context/AuthContext.jsx";
 import { useContext } from "react";
 import { signInWithPopup } from "firebase/auth";
 import { auth, provider } from "../../utils/Firebase";
-import { userDataContext } from "../context/userContext";
+import { userDataContext } from "../context/UserContext.jsx";
 import Loading from "../component/Loading";
 function Registration(){
     let [show,setShow]=useState(false);

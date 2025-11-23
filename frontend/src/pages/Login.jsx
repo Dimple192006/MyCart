@@ -5,11 +5,11 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { IoEyeOutline } from "react-icons/io5";
 import { IoEye } from "react-icons/io5";
-import { authDataContext } from "../context/authContext";
+import { authDataContext } from "../context/AuthContext.jsx";
 import axios from "axios";
 import { signInWithPopup } from "firebase/auth";
 import { auth, provider } from "../../utils/Firebase";
-import { userDataContext } from "../context/userContext";
+import { userDataContext } from "../context/UserContext.jsx";
 import { toast } from "react-toastify";
 import Loading from "../component/Loading";
 

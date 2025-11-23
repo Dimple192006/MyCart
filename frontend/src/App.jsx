@@ -17,7 +17,7 @@ import Order from "./pages/Order";
 import {ToastContainer,toast} from "react-toastify";
 import NotFound from "./pages/NotFound";
 import Ai from "./component/Ai";
-import { userDataContext } from "./context/userContext";
+import { userDataContext } from "./context/UserContext.jsx";
 
 function App() {
   let {userData}=useContext(userDataContext)

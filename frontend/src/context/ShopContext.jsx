@@ -1,8 +1,8 @@
 import React, { createContext,useContext,useState ,useEffect} from "react"
-import { authDataContext } from "./authContext"
+import { authDataContext } from "./AuthContext.jsx"
 import axios from "axios"
 import { toast } from "react-toastify"
-import { userDataContext } from "./userContext"
+import { userDataContext } from "./UserContext.jsx"
 export const ShopDataContext=createContext()
 function ShopContext({children}){
     let [products,setProducts]=useState([])

@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import open from "../assets/audio1.mp3"
 import { signInWithPopup } from "firebase/auth";
-import { authDataContext } from "../context/authContext";
-import { userDataContext } from "../context/userContext";
+import { authDataContext } from "../context/AuthContext.jsx";
+import { userDataContext } from "../context/UserContext.jsx";
 import { auth, provider } from "../../utils/Firebase";
 import axios from "axios";
 

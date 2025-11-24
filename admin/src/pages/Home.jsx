@@ -44,12 +44,11 @@
 // }
 
 // export default Home;
-
 import React, { useContext, useEffect, useState } from "react";
 import Nav from "../component/Nav";
 import Sidebar from "../component/Sidebar";
-import { authDataContext } from "../context/AuthContext.jsx";
 import axios from "axios";
+import { authDataContext } from "../context/AuthContext.jsx";
 
 function Home() {
     const [totalProducts, setTotalProducts] = useState(0);
@@ -59,16 +58,17 @@ function Home() {
 
     const fetchCounts = async () => {
         try {
-            // ✅ FIXED request syntax
+            // GET products (correct syntax)
             const products = await axios.get(
                 `${serverUrl}/api/product/list`,
                 { withCredentials: true }
             );
             setTotalProducts(products.data.length);
 
-            // ✅ FIXED: Use GET (not POST)
-            const orders = await axios.get(
+            // POST orders (correct syntax)
+            const orders = await axios.post(
                 `${serverUrl}/api/order/list`,
+                {},
                 { withCredentials: true }
             );
             setTotalOrders(orders.data.length);
@@ -80,7 +80,7 @@ function Home() {
 
     useEffect(() => {
         fetchCounts();
-    }, []); // ✅ FIXED: add dependency array to prevent infinite looping
+    }, []);
 
     return (
         <div className="w-[100vw] h-[100vh] bg-gradient-to-l from-[#141414] to-[#0c2025] text-[white] relative">

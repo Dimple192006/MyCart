@@ -21,7 +21,7 @@ import React, { createContext } from "react";
 export const authDataContext = createContext(); // ✅ Yeh sahi hai
 
 function AuthProvider({ children }) {
-  const serverUrl = "http://localhost:8000";
+  const serverUrl = "https://mycart-4.onrender.com";
   
 
   return (

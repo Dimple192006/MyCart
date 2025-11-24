@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import Nav from "../component/Nav";
 import Sidebar from "../component/Sidebar";
 import { useContext } from "react";
-import { authDataContext } from "../context/authContext";
+import { authDataContext } from "../context/AuthContext.jsx";
 import axios from "axios";
 
 function Lists(){

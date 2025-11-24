@@ -6,7 +6,7 @@ import { useState } from "react";
 import { IoCloudyNight, IoEyeOutline } from "react-icons/io5";
 import { IoEye } from "react-icons/io5";
 import axios from "axios"
-import { authDataContext } from "../context/authContext";
+import { authDataContext } from "../context/AuthContext.jsx";
 import { adminDataContext } from "../context/AdminContext";
 import { toast } from "react-toastify";
 import Loading from "../component/Loading";

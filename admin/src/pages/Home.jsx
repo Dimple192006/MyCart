@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react"
 import Nav from "../component/Nav";
 import Sidebar from "../component/Sidebar";
-import { authDataContext } from "../context/authContext";
+import { authDataContext } from "../context/AuthContext.jsx";
 import axios from "axios";
 
 function Home(){

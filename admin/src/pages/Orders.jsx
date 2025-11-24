@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import Nav from "../component/Nav";
 import Sidebar from "../component/Sidebar";
-import { authDataContext } from "../context/authContext";
+import { authDataContext } from "../context/AuthContext.jsx";
 import axios, { Axios } from "axios";
 import { SiEbox } from "react-icons/si";
 import {toast} from "react-toastify";

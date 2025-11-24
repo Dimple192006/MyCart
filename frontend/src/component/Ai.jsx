@@ -74,6 +74,7 @@ function Ai(){
             if(transcript.toLowerCase().includes("add to cart")||transcript.toLowerCase().includes("add")||transcript.toLowerCase().includes("add this")){
                 addToCart(productData._id,size);
                 speak("Added to Cart");
+                navigate("/cart");
                 setShowSearch(false)
             }
         }else if(transcript.toLowerCase().includes("cart") || transcript.toLowerCase().includes("kaat") || transcript.toLowerCase().includes("caat")){

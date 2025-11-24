@@ -15,7 +15,7 @@ let app=express();
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin:"https://mycart-frontendseven.onrender.com",
+    origin:["https://mycart-frontendseven.onrender.com","https://mycart-admintwo.onrender.com"],
     credentials:true
 }));
 
